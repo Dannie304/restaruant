@@ -51,3 +51,38 @@ form.addEventListener("submit", async (e) => {
 
     form.reset();
 });
+
+const express = require('express');
+const connection = require('./database'); // Import the database connection
+
+const app = express();
+
+// Other route handlers and middleware...
+
+app.post('/signup', (req, res) => {
+    // Retrieve user data from the request body
+    const user = {
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        username: req.body.username,
+        password: req.body.password
+    };
+
+    // Insert the user data into the database
+    connection.query('INSERT INTO users SET ?', user, (error, results) => {
+        if (error) {
+            console.error('Error inserting user:', error);
+            res.status(500).json({ error: 'Error inserting user' });
+            return;
+        }
+
+        res.status(200).json({ message: 'User inserted successfully' });
+    });
+});
+
+// Other route handlers and middleware...
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
