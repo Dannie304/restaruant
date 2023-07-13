@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    background: url(/images/slice-of-pizza-salami.webp);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 20vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+span {
+    color: #ea1538;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+
+.one {
+    color: white;
+    background-color: #db0b2e;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+}
+
+.one a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.container,
+.container2 {
+    /* Your existing styles... */
+    overflow: hidden;
+    /* Add this line to hide the overflow during animation */
+    transition: transform 0.3s ease;
+    /* Add this line to animate the transform property */
+}
+
+.container.closed,
+.container2.closed {
+    transform: translateX(100%);
+    /* Slide out the container to the right */
+}
+
+.item img,
+.drink img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item h3,
+.drink h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item p,
+.drink p {
+    margin: 5px 0;
+}
+
+.item input,
+.drink input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    height: 50px;
+    width: 150px;
+    background: #ea1538;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c70021;
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Styles for phone screen sizes */
+    body {
+        font-size: 14px;
+        /* Adjust the font size for better readability on smaller screens */
+    }
+
+    .hero {
+        height: 15vh;
+        /* Decrease the height of the hero section */
+    }
+
+    nav {
+        padding-top: 20px;
+        /* Decrease the top padding of the navigation */
+    }
+
+    .logo {
+        font-size: 24px;
+        /* Decrease the font size of the logo */
+    }
+
+    .container,
+    .container2 {
+        flex-direction: column;
+        /* Stack the items vertically */
+    }
+
+    .item,
+    .drink {
+        margin-bottom: 20px;
+        /* Add some spacing between the items */
+    }
+
+    .order {
+        margin-top: 20px;
+        /* Add some spacing between the section and the order button */
+    }
+
+    /* Adjust other styles as needed for better layout on phone screens */
+}

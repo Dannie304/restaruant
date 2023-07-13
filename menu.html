@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/menu.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h1 class="logo">D's <span>Pastries</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <button id="authButton"><a href="signup.html">SIGN-UP</a></button>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="container">
+            <h1>MEALS</h1>
+            <div class="item">
+                <img src="/images/burgard.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>Price: $5.99</p>
+                <label for="burgerQuantity">Quantity:</label>
+                <input type="number" id="burgerQuantity" min="0" value="0">
+            </div>
+
+            <div class="item">
+                <img src="images/foodiesfeed.com_pizza-salami.jpg" height="60px" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>Price: $9.99</p>
+                <label for="pizzaQuantity">Quantity:</label>
+                <input type="number" id="pizzaQuantity" min="0" value="0">
+            </div>
+
+            <div class="item">
+                <img src="images/noodles.jpg" height="60px" alt="Noodles">
+                <h3>Noodles</h3>
+                <p>Price: $7.99</p>
+                <label for="noodlesQuantity">Quantity:</label>
+                <input type="number" id="noodlesQuantity" min="0" value="0">
+            </div>
+
+            <div class="item">
+                <img src="images/taco.jpg" height="60px" alt="taco">
+                <h3>Taco</h3>
+                <p>Price: $10.99</p>
+                <label for="tacoQuantity">Quantity:</label>
+                <input type="number" id="tacoQuantity" min="0" value="0">
+            </div>
+
+            <div class="item">
+                <img src="images/cupcake.jpg" height="60px" alt="">
+                <h3>Cup-cake</h3>
+                <p>Price: $4.99</p>
+                <label for="cupcakeQuantity">Quantity:</label>
+                <input type="number" id="cupcakeQuantity" min="0" value="0">
+            </div>
+
+            <div class="item">
+                <img src="images/cake2.jpg" height="60px" alt="cake">
+                <h3>cake</h3>
+                <p>Price: $30.21</p>
+                <label for="cakeQuantity">Quantity:</label>
+                <input type="number" id="cakeQuantity" min="0" value="0">
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1>DRINKS</h1>
+            <div class="drink">
+                <img src="./images/smoothy.jpg" alt="">
+                <h3>Smoothy</h3>
+                <p>Price: $30.89</p>
+                <label for="teaQuantity">Quantity:</label>
+                <input type="number" id="smoothyQuantity" min="0" value="0">
+            </div>
+
+            <div class="drink">
+                <img src="images/soda.jpg" height="60px" alt="">
+                <h3>Coke</h3>
+                <p>Price: $5.89</p>
+                <label for="cokeQuantity">Quantity:</label>
+                <input type="number" id="cokeQuantity" min="0" value="0">
+            </div>
+
+            <div class="drink">
+                <img src="/images/milk.webp" height="60px" alt="">
+                <h3>milk-shake</h3>
+                <p>Price: $12.89</p>
+                <label for="teaQuantity">Quantity:</label>
+                <input type="number" id="milk-shake" min="0" value="0">
+            </div>
+
+            <div class="drink">
+                <img src="./images/hot-chocolate-5828239_640.jpg" height="60px" alt="">
+                <h3>Hot-chocolate</h3>
+                <p>Price: $18.19</p>
+                <label for="teaQuantity">Quantity:</label>
+                <input type="number" id="Home" min="0" value="0">
+            </div>
+
+            <div class="drink">
+                <img src="/images/tea.jpg" height="60px" alt="">
+                <h3>Tea</h3>
+                <p>Price: $2.89</p>
+                <label for="teaQuantity">Quantity:</label>
+                <input type="number" id="teaQuantity" min="0" value="0">
+            </div>
+
+            <div class="drink">
+                <img src="/images/COFFE1.jpg" height="60px" alt="">
+                <h3>Coffe</h3>
+                <p>Price: $4.88</p>
+                <label for="teaQuantity">Quantity:</label>
+                <input type="number" id="coffeQuantity" min="0" value="0">
+            </div>
+        </div>
+    </div>
+    <div class="order">
+        <button id="order">ORDER-NOW</button>
+    </div>
+    <script src="JS/menu.js"></script>
+    <script src="JS/auth.js"></script>
+</body>

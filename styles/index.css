@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+    padding: 0;
+}
+
+.hero {
+    height: 20vh;
+    width: 100%;
+
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+span {
+    color: #ea1538;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+
+.one {
+    color: white;
+    background-color: #db0b2e;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+
+}
+
+.one a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#mytext h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-size: 60px;
+}
+
+
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#pizza {
+    height: 50vh;
+    width: 400px;
+
+}
+
+footer {
+    background-color: hsl(0, 92%, 86%);
+    height: 50vh;
+    padding-top: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+     margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.footer-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.footer-container-left img {
+    height: 30px;
+    width: 30px;
+
+}
+
+.footer-container-left p {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-container-right {
+    display: flex;
+    gap: 30px;
+
+}
+
+.footer-container-right img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer-container-right img:hover {
+    color: blue;
+    transition-duration: 2s;
+}

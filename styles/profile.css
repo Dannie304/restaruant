@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    margin: 0px;
+    padding: 0;
+    color: #fff;
+}
+
+.hero {
+    height: 20vh;
+    width: 100%;
+
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+}
+
+span {
+    color: #ea1538;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ea1538;
+    transition: .3s;
+}
+
+.one {
+    color: white;
+    background-color: #db0b2e;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+
+}
+
+.one a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.profile-container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#profile-details {
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+#profileContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#profileInfo {
+    width: 300px;
+}
+
+#profileInfo h2 {
+    margin-top: 0;
+}
+
+#profilePictureContainer {
+    width: 200px;
+}
+
+#profilePicture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#editProfileForm {
+    display: none;
+    width: 300px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+#editProfileForm div {
+    margin-bottom: 10px;
+}
+
+#editProfileForm label {
+    display: block;
+}
+
+#editProfileButton,
+#cancelEditButton {
+    display: block;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: aqua;
+    height: 3rem;
+    width: 70px;
+}

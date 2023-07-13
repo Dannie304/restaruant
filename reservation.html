@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reservation.css">
+    <title>reservation</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h1 class="logo">D's <span>Pastries</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <button id="authButton"><a href="signup.html">SIGN-UP</a></button>
+        </nav>
+
+        <div class="reservation-container">
+            <h1>Make a Reservation</h1>
+            <form id="reservation-form">
+                <label for="table">Date:</label>
+                <input type="date" id="table" required>
+                <label for="time">Time:</label>
+                <input type="time" id="time" required>
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" required>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div>
+        <script src="JS/reservation.js"></script>
+        <script src="JS/auth.js"></script>
+</body>
+
+</html>

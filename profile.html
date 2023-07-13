@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/profile.css">
+    <title>profile</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h1 class="logo">D's <span>Pastries</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <button id="authButton"><a href="signup.html">SIGN-UP</a></button>
+        </nav>
+    </div>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>User Profile Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>User Profile</h1>
+
+        <div id="profileContainer">
+            <div id="profileInfo">
+                <h2>Profile Information</h2>
+                <p><strong>First Name:</strong> <span id="firstName"></span></p>
+                <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+                <p><strong>Username:</strong> <span id="username"></span></p>
+                <p><strong>Email:</strong> <span id="email"></span></p>
+                <button id="editProfileButton">Edit Profile</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+            <div id="profilePictureContainer">
+                <img id="profilePicture" src="" alt="Profile Picture">
+            </div>
+        </div>
+
+        <form id="editProfileForm" enctype="multipart/form-data">
+            <div>
+                <label for="editFirstName">First Name:</label>
+                <input type="text" id="editFirstName" name="editFirstName" required>
+            </div>
+            <div>
+                <label for="editLastName">Last Name:</label>
+                <input type="text" id="editLastName" name="editLastName" required>
+            </div>
+            <div>
+                <label for="editUsername">Username:</label>
+                <input type="text" id="editUsername" name="editUsername" required>
+            </div>
+            <div>
+                <label for="editEmail">Email:</label>
+                <input type="email" id="editEmail" name="editEmail" required>
+            </div>
+            <div>
+                <label for="editProfilePicture">Profile Picture:</label>
+                <input type="file" id="editProfilePicture" name="editProfilePicture" accept="image/*" required>
+            </div>
+            <div>
+                <input type="submit" value="Save Changes">
+                <button id="cancelEditButton">Cancel</button>
+            </div>
+        </form>
+
+        <script src="JS/profile.js"></script>
+        <script src="JS/auth.js"></script>
+    </body>
+
+    </html>
+
+
+
+</body>
+
+</html>
