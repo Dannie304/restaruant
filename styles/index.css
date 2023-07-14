@@ -100,7 +100,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-     margin-left: 10%;
+    margin-left: 10%;
     margin-right: 10%;
 
 }
@@ -139,4 +139,46 @@ footer {
 .footer-container-right img:hover {
     color: blue;
     transition-duration: 2s;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #db0b2e;
+        padding: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #menu-toggle:checked+.menu {
+        display: flex;
+    }
 }
